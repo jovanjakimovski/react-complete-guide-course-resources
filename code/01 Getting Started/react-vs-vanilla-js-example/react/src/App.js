@@ -18,6 +18,9 @@ const content = [
     "Official web page (react.dev)",
     "Next.js (Fullstack framework)",
     "React Native (build native mobile apps with React)"
+  ],
+  [
+    "Vanilla Javascript requires imperative programming"
   ]
 ];
 
@@ -53,6 +56,12 @@ export default function App() {
             onClick={() => setActiveContentIndex(2)}
           >
             Related Resources
+          </button>
+          <button
+            className={activeContentIndex === 3 ? "active" : ""}
+            onClick={() => setActiveContentIndex(3)}
+          >
+            React vs JS
           </button>
         </menu>
         <div id="tab-content">
